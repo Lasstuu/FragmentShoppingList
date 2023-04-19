@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class ItemList {
     private ArrayList<Item> items = new ArrayList<>();
     private static ItemList itemList = null;
-
+    private boolean emptyList = true;
 
 
     private ItemList(){
@@ -38,7 +38,13 @@ public class ItemList {
     }
     public void addItem(Item item) {
         items.add(item);
+        emptyList = false;
         }
+
+    public boolean isEmptyList() {
+        return emptyList;
+    }
+
     public void removeItem(int id) {
         int i = 0;
         for (Item a : items) {

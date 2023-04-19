@@ -21,7 +21,7 @@ public class AddItemActivity extends AppCompatActivity {
 
         TextView tvItemName = findViewById(R.id.etItemName);
         TextView tvItemInfo = findViewById(R.id.etItemInfo);
-        ItemList.getInstance().addItem(new Item(tvItemName.getText().toString(),tvItemInfo.getText().toString(),id));
+        /*ItemList.getInstance().addItem(new Item(tvItemName.getText().toString(),tvItemInfo.getText().toString(),id));*/
         id++;
 
     }

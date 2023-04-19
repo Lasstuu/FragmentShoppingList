@@ -43,4 +43,8 @@ public class FragmentA extends Fragment {
 
         return view;
     }
+    public void onResume(){
+        super.onResume();
+        recyclerView.setAdapter(new ShoppingListAdapter(getContext(), itemList.getItems()));
+    }
 }

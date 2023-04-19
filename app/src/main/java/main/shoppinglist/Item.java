@@ -4,10 +4,12 @@ public class Item {
     private String name;
     private String info;
     private int id;
+    private boolean important;
 
-    public Item(String name, String info, int id) {
+    public Item(String name, String info, boolean important, int id) {
         this.name = name;
         this.info = info;
+        this.important = important;
         this.id = id;
     }
 
@@ -17,6 +19,10 @@ public class Item {
 
     public String getInfo() {
         return info;
+    }
+
+    public boolean isImportant() {
+        return important;
     }
 
     public void setName(String name) {
